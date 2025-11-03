@@ -1963,7 +1963,9 @@
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors/bograt/west)
 "aHJ" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/water/swamp,
 /area/rogue/indoors/town/church/chapel)
 "aHU" = (
@@ -6455,7 +6457,7 @@
 	pixel_y = 7
 	},
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 12
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/outdoors/beach/harbor)
@@ -7596,8 +7598,10 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors)
 "cyw" = (
-/obj/structure/chair/bench/church/smallbench,
 /obj/effect/decal/cleanable/blood/old,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/church/chapel)
 "cyD" = (
@@ -8224,15 +8228,7 @@
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/shop)
 "cHV" = (
-/obj/structure/chair/bench/church/smallbench,
-/obj/effect/wisp/prestidigitation{
-	desc = "A small, fiery ball of light made up of mystical energy.";
-	name = "Will-o'-the-wisp";
-	pixel_x = 0;
-	color = "#ffff00";
-	light_color = "#33ff00"
-	},
-/turf/open/floor/rogue/cobble,
+/turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cave/dungeon1)
 "cIc" = (
 /turf/open/floor/rogue/tile,
@@ -8387,10 +8383,10 @@
 /area/rogue/indoors/town/manor/rockhill)
 "cKi" = (
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 12
+	pixel_y = 19
 	},
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/indoors/town/manor/rockhill)
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave/dungeon1)
 "cKn" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/kitchen/spoon,
@@ -8585,7 +8581,9 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/bograt/above)
 "cNv" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/manor/rockhill)
 "cNx" = (
@@ -14852,6 +14850,19 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town/rockhill)
+"eHy" = (
+/obj/effect/wisp/prestidigitation{
+	desc = "A small, fiery ball of light made up of mystical energy.";
+	name = "Will-o'-the-wisp";
+	pixel_x = 0;
+	color = "#ffff00";
+	light_color = "#33ff00"
+	},
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave/dungeon1)
 "eHI" = (
 /obj/structure/table/wood{
 	dir = 6;
@@ -17931,7 +17942,9 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/woodsrat/above)
 "fHw" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
 	},
@@ -20984,7 +20997,7 @@
 /area/rogue/outdoors/bograt/south)
 "gDR" = (
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 15
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/tile/bath{
 	icon_state = "bathtileratwood"
@@ -23409,7 +23422,7 @@
 /area/rogue/indoors/town/dwarfin/rockhill)
 "hsT" = (
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 18
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/shelter/druidgrove)
@@ -24837,7 +24850,9 @@
 /turf/closed/mineral/random/rogue,
 /area/rogue/outdoors/beach/harbor)
 "hRP" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
 	},
@@ -25237,7 +25252,7 @@
 /area/rogue/outdoors/bograt/above)
 "hXZ" = (
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 20
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/town/manor/rockhill)
@@ -27218,7 +27233,7 @@
 	pixel_y = 10
 	},
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 32
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor/rockhill)
@@ -33224,7 +33239,7 @@
 /area/rogue/under/cave/rhgoblinencampment)
 "kHz" = (
 /obj/structure/chair/bench/church/smallbench{
-	dir = 8
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/church)
@@ -37052,7 +37067,6 @@
 /area/rogue/outdoors/beach/harbor)
 "lZV" = (
 /obj/structure/ritualcircle/zizo,
-/obj/effect/landmark/quest_spawner/hard,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "horzw"
 	},
@@ -37593,7 +37607,7 @@
 /area/rogue/outdoors/beach/harbor)
 "mhb" = (
 /obj/structure/chair/bench/church/smallbench{
-	dir = 1
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/church)
@@ -39286,7 +39300,7 @@
 /area/rogue/outdoors/woodsrat/river)
 "mIT" = (
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 15
+	pixel_y = 19
 	},
 /obj/item/reagent_containers/glass/bucket{
 	pixel_x = 5
@@ -39639,7 +39653,7 @@
 "mPk" = (
 /obj/machinery/light/roguestreet/orange/walllamp,
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 18
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor/rockhill)
@@ -41820,7 +41834,7 @@
 "nCE" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 20
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
@@ -46784,7 +46798,10 @@
 	},
 /area/rogue/under/cave/dungeon1)
 "pjI" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/effect/decal/cleanable/blood/old,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/dungeon1)
 "pjK" = (
@@ -49800,7 +49817,9 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/warden)
 "qlI" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor/rockhill)
 "qmc" = (
@@ -51800,8 +51819,7 @@
 /area/rogue/indoors/town/shop)
 "qWs" = (
 /obj/structure/chair/bench/church/smallbench{
-	dir = 1;
-	pixel_y = 21
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/church)
@@ -55160,9 +55178,7 @@
 	pixel_x = -10
 	},
 /obj/structure/chair/bench/church/smallbench{
-	dir = 8;
-	name = "Steering Base";
-	pixel_x = -13
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/ruinedwood{
 	dir = 1;
@@ -56087,7 +56103,9 @@
 	first_time_text = "Somewhere High"
 	})
 "ste" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/druidgrove)
 "stl" = (
@@ -59307,7 +59325,9 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/druidgrove)
 "tuJ" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/rtfield/rockhill)
 "tuM" = (
@@ -59503,8 +59523,7 @@
 	pixel_x = -8
 	},
 /obj/structure/chair/bench/church/smallbench{
-	pixel_y = 25;
-	pixel_x = 30
+	pixel_y = 19
 	},
 /obj/structure/bookcase/random,
 /turf/open/floor/rogue/grass,
@@ -60978,7 +60997,9 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor/rockhill)
 "tYa" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/church/chapel)
 "tYc" = (
@@ -68373,6 +68394,13 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor/rockhill)
+"wyT" = (
+/mob/living/carbon/human/species/skeleton/npc/cultist,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave/dungeon1)
 "wzk" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/water/swamp,
@@ -70026,7 +70054,9 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/rtfield/rockhill)
 "xaR" = (
-/obj/structure/chair/bench/church/smallbench,
+/obj/structure/chair/bench/church/smallbench{
+	pixel_y = 19
+	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/druidgrove)
 "xaT" = (
@@ -130507,8 +130537,8 @@ whb
 whb
 ptQ
 ptQ
-nWS
-nWS
+cHV
+cHV
 ptQ
 whb
 whb
@@ -130934,35 +130964,35 @@ whb
 whb
 whb
 whb
-nWS
-nWS
+cHV
+cHV
 ptQ
 ptQ
 iuS
 dzq
 kDJ
+cHV
 ptQ
 ptQ
+cHV
+cHV
 ptQ
-nWS
-nWS
 ptQ
-ptQ
-nWS
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
+cHV
 whb
 bXC
 dJg
 bXC
 bXC
 whb
-nWS
-nWS
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
+cHV
+cHV
 whb
 whb
 whb
@@ -131366,7 +131396,7 @@ whb
 whb
 whb
 whb
-nWS
+cHV
 kgT
 evK
 ptQ
@@ -131376,26 +131406,26 @@ xQO
 ptQ
 rNH
 kgT
-nWS
+cHV
 kgT
 evK
 ptQ
 tOf
 bXC
 uoa
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
 bXC
 bXC
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
 tOf
 bXC
 uoa
-nWS
-nWS
+cHV
+cHV
 whb
 whb
 whb
@@ -131827,7 +131857,7 @@ dzq
 dzq
 dzq
 uoa
-nWS
+cHV
 whb
 whb
 whb
@@ -132245,7 +132275,7 @@ dvv
 rZq
 ptQ
 xQO
-xQO
+roG
 xQO
 xQO
 xQO
@@ -132259,7 +132289,7 @@ dzq
 bXC
 dzq
 bXC
-nWS
+cHV
 whb
 whb
 whb
@@ -132662,28 +132692,28 @@ whb
 whb
 whb
 whb
-nWS
+cHV
 ptQ
 ptQ
 ptQ
 voc
 xQO
 xQO
-nWS
+cHV
 ptQ
 ptQ
-nWS
+cHV
 ptQ
 ptQ
 ptQ
 kmi
 xQO
 xQO
-nWS
-nWS
-nWS
-nWS
-nWS
+cHV
+ptQ
+ptQ
+ptQ
+cHV
 xQO
 xQO
 qxI
@@ -132691,7 +132721,7 @@ dzq
 bXC
 bXC
 uoa
-nWS
+cHV
 whb
 whb
 whb
@@ -133094,36 +133124,36 @@ whb
 whb
 whb
 whb
-nWS
+cHV
 kgT
 rNH
 ptQ
 dzq
 xQO
 xQO
-nWS
+cHV
 rNH
 kgT
-nWS
+cHV
 kgT
 rNH
 ptQ
 xQO
 xQO
-nWS
+cHV
 ptQ
-ptQ
-ptQ
-nWS
-nWS
-nWS
-nWS
-nWS
+pHP
+pHP
+pHP
+cHV
+cHV
+cHV
+cHV
 dzq
 bXC
-nWS
+cHV
 ptQ
-nWS
+cHV
 whb
 whb
 whb
@@ -133526,7 +133556,7 @@ whb
 whb
 whb
 whb
-nWS
+cHV
 xQg
 roG
 goJ
@@ -133536,12 +133566,12 @@ gHg
 goJ
 xQO
 jyi
-nWS
+cHV
 xQg
 roG
 goJ
 xQO
-xQO
+roG
 xQO
 pHP
 nWS
@@ -134390,18 +134420,18 @@ ptQ
 ptQ
 ptQ
 ptQ
-nWS
-nWS
+cHV
+cHV
 ptQ
 ptQ
 ptQ
 goJ
 ptQ
-nWS
-nWS
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
+cHV
+cHV
 ptQ
 ptQ
 dzq
@@ -134413,13 +134443,13 @@ qxy
 vpo
 pjE
 kqe
-cHV
 xQO
-pjI
-roG
+eHy
+xQO
+wyT
 koi
-nWS
-nWS
+cHV
+cHV
 bXC
 bXC
 whb
@@ -134845,10 +134875,10 @@ iyq
 qZX
 vpo
 bko
-pjI
+xQO
+cKi
 xQO
 pjI
-gHg
 gHg
 jlU
 bXC
@@ -135283,7 +135313,7 @@ xQO
 xQO
 xQO
 fLR
-nWS
+cHV
 bXC
 bXC
 whb
@@ -135709,10 +135739,10 @@ iyq
 qZX
 vpo
 bko
-pjI
 xQO
-pjI
+cKi
 xQO
+cKi
 xQO
 jlU
 bXC
@@ -136115,14 +136145,14 @@ whb
 whb
 whb
 ptQ
-nWS
 ptQ
 ptQ
-nWS
+cHV
+cHV
 ptQ
 ptQ
 goJ
-nWS
+cHV
 ptQ
 ptQ
 ptQ
@@ -136136,18 +136166,18 @@ dzq
 dzq
 bjy
 ptQ
-nWS
+cHV
 qxy
 vpo
 oSv
 kqe
-pjI
 xQO
-pjI
+wyT
 xQO
+cKi
 vGL
-nWS
-nWS
+cHV
+cHV
 bXC
 bXC
 whb
@@ -136550,14 +136580,14 @@ whb
 whb
 whb
 whb
-ptQ
+cHV
 bev
 xQO
 xQO
 xQO
 xQO
 aGf
-nWS
+cHV
 uFE
 gXx
 dvv
@@ -136568,7 +136598,7 @@ dzq
 dzq
 xQO
 ptQ
-nWS
+cHV
 jWA
 xCN
 jWA
@@ -136982,25 +137012,25 @@ whb
 whb
 whb
 whb
-nWS
+cHV
 bev
 xQO
 aGf
 aGf
 xQO
 aGf
-ptQ
+cHV
 aly
 dzq
 xQO
 xQO
 xQO
-nWS
+cHV
 dzq
 qxI
 xQO
 pHP
-nWS
+cHV
 nRf
 koi
 teN
@@ -137010,7 +137040,7 @@ teN
 qxI
 dzq
 mig
-nWS
+cHV
 bXC
 whb
 whb
@@ -137414,14 +137444,14 @@ whb
 whb
 whb
 whb
-ptQ
+cHV
 gLY
 pWj
 aGf
 aGf
 xQO
 aGf
-nWS
+cHV
 ppv
 dzq
 xQO
@@ -137432,18 +137462,18 @@ dzq
 xQO
 nWS
 pHP
-nWS
-ptQ
-nWS
-nWS
-nWS
+cHV
+pHP
+pHP
+cHV
+cHV
 ptQ
 ptQ
 dzq
 dzq
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
 whb
 whb
 whb
@@ -137846,28 +137876,28 @@ whb
 whb
 whb
 whb
-nWS
+cHV
 usY
 xQO
 aGf
 aGf
 xQO
 xUX
-ptQ
+cHV
 hBS
 hBS
 fjZ
 hBS
 hBS
-nWS
+cHV
 cKD
 dzq
 dzq
-nWS
-nWS
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
+cHV
+cHV
 dzq
 dzq
 dzq
@@ -137875,7 +137905,7 @@ dzq
 dzq
 dzq
 uoa
-nWS
+cHV
 whb
 whb
 whb
@@ -138307,7 +138337,7 @@ dzq
 sSE
 dzq
 bXC
-nWS
+cHV
 whb
 whb
 whb
@@ -138717,7 +138747,7 @@ xQO
 qOY
 dWo
 xUX
-ptQ
+cHV
 nRZ
 mdo
 roG
@@ -138739,7 +138769,7 @@ dzq
 dzq
 bXC
 uoa
-nWS
+cHV
 whb
 whb
 whb
@@ -139155,23 +139185,23 @@ xQO
 xQO
 nRZ
 mdo
-nWS
+cHV
 tOf
 bXC
 uoa
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
 bXC
 bXC
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
 tOf
 bXC
 uoa
-nWS
-nWS
+cHV
+cHV
 whb
 whb
 whb
@@ -139587,22 +139617,22 @@ pHP
 pHP
 ptQ
 ptQ
-nWS
-nWS
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
+cHV
+cHV
 whb
 bXC
 bXC
 dJg
 bXC
 whb
-nWS
-nWS
-nWS
-nWS
-nWS
+cHV
+cHV
+cHV
+cHV
+cHV
 whb
 whb
 whb
@@ -189183,7 +189213,7 @@ smf
 smf
 smf
 smf
-smf
+oqo
 rfA
 ujL
 rfA
@@ -193498,7 +193528,7 @@ rri
 lxs
 uRH
 ujL
-smf
+oqo
 smf
 oqo
 oqo
@@ -193929,7 +193959,7 @@ uRH
 ujL
 lxs
 ujL
-ujL
+oqo
 smf
 smf
 smf
@@ -194360,7 +194390,7 @@ oqo
 rfA
 lxs
 lxs
-ujL
+oqo
 smf
 smf
 smf
@@ -194792,7 +194822,7 @@ ujL
 ujL
 lxs
 rfA
-rfA
+oqo
 smf
 smf
 smf
@@ -219007,7 +219037,7 @@ rfA
 smf
 smf
 smf
-ujL
+oqo
 smf
 smf
 rfA
@@ -219437,10 +219467,10 @@ ujL
 rfA
 smf
 smf
-ujL
+oqo
 smf
 smf
-ujL
+oqo
 smf
 rfA
 rfA
@@ -237654,8 +237684,8 @@ uWK
 wfu
 qrc
 uWK
-gDP
-qrc
+uWK
+xQW
 qrc
 uWK
 gDP
@@ -238522,7 +238552,7 @@ uWK
 qrc
 uWK
 uWK
-qrc
+xQW
 uWK
 gDP
 uWK
@@ -238954,7 +238984,7 @@ gDP
 qrc
 qrc
 uWK
-qrc
+xQW
 qrc
 uWK
 uWK
@@ -241115,7 +241145,7 @@ qrc
 qrc
 qrc
 gDP
-xQW
+qrc
 qrc
 uWK
 qrc
@@ -241547,7 +241577,7 @@ gDP
 gDP
 uWK
 qrc
-pBN
+qrc
 xQW
 gDP
 uWK
@@ -245010,7 +245040,7 @@ qrc
 xfA
 qrc
 xQW
-gDP
+uWK
 uWK
 wLx
 wLx
@@ -357406,7 +357436,7 @@ kth
 cNv
 cod
 qUK
-cKi
+cNv
 rwO
 kYS
 kIS
@@ -357838,7 +357868,7 @@ kIS
 cNv
 qyB
 bec
-cKi
+cNv
 rwO
 tJU
 kIS
@@ -358270,7 +358300,7 @@ kIS
 cNv
 qvt
 tJU
-cKi
+cNv
 rwO
 emP
 kIS
@@ -359134,7 +359164,7 @@ kIS
 cNv
 cod
 qUK
-cKi
+cNv
 rwO
 gDZ
 kIS
@@ -359566,7 +359596,7 @@ kIS
 cNv
 qyB
 bec
-cKi
+cNv
 rwO
 kYS
 kIS
@@ -359998,7 +360028,7 @@ kth
 cNv
 qvt
 hHs
-cKi
+cNv
 rwO
 tJU
 kIS
@@ -442731,8 +442761,8 @@ bBs
 wMB
 wMB
 wMB
+rDt
 wMB
-gAU
 gAU
 bUA
 bUA
@@ -443163,8 +443193,8 @@ clE
 wMB
 sPT
 sPT
+dHt
 wMB
-odi
 odi
 gAU
 bUA
@@ -443595,8 +443625,8 @@ wMB
 wMB
 csk
 csk
-wMB
-wMB
+dHt
+dHt
 odi
 gAU
 bUA
@@ -444027,7 +444057,7 @@ efu
 kZq
 dHt
 dHt
-mgb
+dHt
 wMB
 bUA
 gAU
@@ -444460,7 +444490,7 @@ kZq
 dHt
 dHt
 mgb
-wMB
+rDt
 odi
 gAU
 bUA
@@ -444889,7 +444919,7 @@ tUS
 bBs
 wMB
 wMB
-wMB
+rDt
 wMB
 wMB
 wMB
@@ -552892,8 +552922,8 @@ rbn
 wZt
 fWN
 fWN
+fWN
 dGN
-kKp
 kKp
 kKp
 kKp
@@ -553325,7 +553355,7 @@ wMB
 wMB
 wMB
 wMB
-kKp
+uUJ
 kKp
 kKp
 kKp
@@ -553757,7 +553787,7 @@ wMB
 sPT
 sPT
 wMB
-dGN
+uUJ
 kKp
 kKp
 kKp
