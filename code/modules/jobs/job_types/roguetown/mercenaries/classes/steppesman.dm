@@ -100,6 +100,14 @@
 				backl = /obj/item/rogueweapon/shield/iron/steppesman
 				l_hand = /obj/item/rogueweapon/stoneaxe/battle/steppesman
 				neck = /obj/item/clothing/neck/roguetown/chaincoif
+				backpack_contents = list(
+					/obj/item/roguekey/mercenary,
+					/obj/item/storage/belt/rogue/pouch/coins/poor,
+					/obj/item/rogueweapon/handsaw,
+					/obj/item/rogueweapon/chisel,
+					/obj/item/rogueweapon/huntingknife/combat,
+					/obj/item/rogueweapon/scabbard/sheath
+				)
 				H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
 				H.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 				H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
