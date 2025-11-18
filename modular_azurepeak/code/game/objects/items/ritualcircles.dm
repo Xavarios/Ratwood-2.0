@@ -1859,7 +1859,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	name = "Rune of Hedonism"
 	desc = "A Holy Rune of Baotha. Relief for the broken hearted."
 	icon_state = "baotha_chalky"
-	var/baotharites = list("Conversion", "Embodiment of Male Fertility")
+	var/baotharites = list("Conversion", "Unholy Boon of Fertility")
 
 /obj/structure/ritualcircle/psydon // done as a joke, but it is good for Psydonites to decorate with.
 	name = "Rune of Enduring"
@@ -1904,7 +1904,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 							baothaconversion(target) // removed CD bc it's gonna be coal to sit there and wait for it to go off rite cooldown, this one is purely social in its nature
 							spawn(120)
 								icon_state = "baotha_chalky"
-		if("Embodiment of Male Fertility")
+		if("Unholy Boon of Fertility")
 			var/list/valids_on_rune = list()
 			for(var/mob/living/carbon/human/peep in range(0, loc))
 				valids_on_rune += peep
@@ -1913,9 +1913,6 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 				return
 			var/mob/living/carbon/human/target = input(user, "Choose a host") as null|anything in valids_on_rune
 			if(!target || QDELETED(target) || target.loc != loc)
-				return
-			if(target.getorganslot(ORGAN_SLOT_VAGINA))
-				to_chat(user, "Those who can naturally bear a child cannot receive this blessing!")
 				return
 			if(do_after(user, 50))
 				user.say("Purple flame, awaken desire!")
@@ -1988,7 +1985,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(!target || QDELETED(target) || target.loc != loc)
 		to_chat(usr, "Selected target is not on the rune! [target.p_they(TRUE)] must be directly on top of the rune to receive Baotha's blessing.")
 		return
-	if(HAS_TRAIT(target, TRAIT_BAOTHA_SHAPED))
+	if(HAS_TRAIT(target, TRAIT_BAOTHA_FERTILITY_BOON))
 		loc.visible_message(span_cult("They have already been blessed!"))
 		return
 	var/prompt = alert(target, "The Goddess of corrupted affection is about to give you the boon of fertility; to bear children!",, "Let it happen...", "Resist!")
@@ -2006,7 +2003,10 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 			target.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE) // hue hue hue
 			spawn(40)
 				to_chat(target, span_purple("Enjoy the new you!"))
-				ADD_TRAIT(target, TRAIT_BAOTHA_SHAPED, TRAIT_GENERIC)
+				ADD_TRAIT(target, TRAIT_BAOTHA_FERTILITY_BOON, TRAIT_GENERIC)
+				if(target.hasVagina() && !target.is_fertile())
+					var/obj/item/organ/vagina/vagina = target.getorganslot(ORGAN_SLOT_VAGINA)
+					vagina.fertility = TRUE
 	if(prompt == "Resist!")
 		to_chat(target, span_warning("I sincerely proposed you my greatest blessing, and you rejected me? How foolish!"))
 		target.Stun(60)
