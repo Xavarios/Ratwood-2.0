@@ -55,7 +55,6 @@
 		item_d_type = "fire"
 		blade_class = BCLASS_CHOP
 
-
 /obj/item/rogueweapon/sword/long/martyr/Initialize()
 	AddComponent(/datum/component/martyrweapon)
 	..()
@@ -93,7 +92,6 @@
 	if(martyr)
 		martyr.ClearFromParent()
 	return ..()
-
 
 /obj/item/rogueweapon/sword/long/martyr/getonmobprop(tag)
 	. = ..()
@@ -182,7 +180,6 @@
 	flags_inv = HIDECROTCH|HIDEBOOB
 	var/overarmor = TRUE
 	sellprice = 300
-
 
 /obj/item/clothing/cloak/holysee/ComponentInitialize()
 	. = ..()

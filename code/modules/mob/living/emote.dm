@@ -41,7 +41,7 @@
 			else
 				follower.sate_addiction()
 		if(HAS_TRAIT(follower, TRAIT_CONVICTION))
-			follower.apply_status_effect(/datum/status_effect/buff/healing/prayer, 1)//Mend those wounds.
+			follower.apply_status_effect(/datum/status_effect/buff/healing/prayer, 2)//Mend those wounds.
 			follower.reagents.add_reagent(/datum/reagent/consumable/nutriment, 3)//Just a small sum.
 
 		//Can the Martyr hear this?
@@ -49,9 +49,10 @@
 			for (var/mob/living/player in GLOB.player_list)
 				if (player.stat == DEAD || isbrain(player))
 					continue
-				//Do they even have the boon/trait?
+				//Do they even have the boon/trait? If so, send it and heal them.
 				if (HAS_TRAIT(player, TRAIT_CONVICTION))
-					to_chat(player, span_dead("I hear the passing of whispers: [span_info(prayer)]."))
+					to_chat(player, span_dead("I hear the passing of whispers, knowledge forbidden to share: <br>[span_info(prayer)]"))
+					player.apply_status_effect(/datum/status_effect/buff/healing/prayer_power, 6)//GET IT?
 
 	/* admin stuff - tells you the followers name, key, and what patron they follow */
 	var/follower_ident = "[follower.key]/([follower.real_name]) (follower of [patron])"

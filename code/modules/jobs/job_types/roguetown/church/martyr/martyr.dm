@@ -2,7 +2,10 @@
 	title = "Martyr"
 	department_flag = CHURCHMEN
 	faction = "Station"
-	tutorial = "Martyrs are hand-picked among the most devout of the Holy See. They are given one of the See's cherished relics to protect the Church, and to inspire hope and lead by example of grace, kindness and vicious intolerance to any who do not share the belief of the Ten. They have sworn an Oath in the sight of the gods, and will fulfill it to the bitter end."
+	tutorial = "Martyrs are hand-picked among the most devout of the Holy See. \
+	They are given one of the See's cherished relics to protect the Church, and to inspire hope and lead by example of grace, \
+	kindness and vicious intolerance to any who do not share the belief of the Ten. \
+	They have sworn an Oath in the sight of the gods, and will fulfill it to the bitter end."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
 	allowed_patrons = ALL_DIVINE_PATRONS
@@ -28,10 +31,11 @@
 		TRAIT_CONVICTION
 	)
 
-	//No undeath-adjacent virtues for a role that can sacrifice itself. The Ten like their sacrifices 'pure'. (I actually didn't want to code returning those virtue traits post-sword use)
+	//No undeath-adjacent virtues for a role that can sacrifice itself. The Ten like their sacrifices 'pure'.
 	//They get those traits during sword activation, anyway.
 	//Dual wielder is there to stand-in for ambidextrous in case they activate their sword in their off-hand.
-	virtue_restrictions = list(/datum/virtue/utility/noble, /datum/virtue/combat/rotcured, /datum/virtue/utility/deadened, /datum/virtue/utility/deathless, /datum/virtue/combat/dualwielder, /datum/virtue/heretic/zchurch_keyholder)
+	virtue_restrictions = list(/datum/virtue/utility/noble, /datum/virtue/combat/rotcured, /datum/virtue/utility/deadened,
+	/datum/virtue/utility/deathless, /datum/virtue/combat/dualwielder, /datum/virtue/heretic/zchurch_keyholder)
 
 	advclass_cat_rolls = list(CTAG_MARTYR = 2)
 	job_subclasses = list(
@@ -73,7 +77,6 @@
 	subclass_stashed_items = list(
 		"The Verses and Acts of the Ten" = /obj/item/book/rogue/bibble,
 	)
-
 	extra_context = "This class allows the player to choose a unique boon on spawn, providing access to rare traits."
 
 /datum/outfit/job/roguetown/martyr
@@ -104,7 +107,7 @@
 		)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 
-/datum/outfit/job/roguetown/martyr/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/martyr/basic/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/boons = list("Endurance", "Indefatigable", "Hollow")
 	var/boon_choice = input(H,"Choose your BOON.", "TAKE UP THE SEE'S GIFT") as anything in boons
