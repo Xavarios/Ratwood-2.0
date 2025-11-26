@@ -22850,13 +22850,13 @@
 /area/rogue/indoors/shelter/druidgrove)
 "gUq" = (
 /obj/structure/bars/grille{
-	dir = 8
+	dir = 1
 	},
 /obj/structure/fluff/railing/wood{
 	dir = 4;
 	pixel_x = 4
 	},
-/turf/open/floor/rogue/ruinedwood/turned,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/beach/harbor)
 "gUt" = (
 /obj/structure/roguemachine/atm{
@@ -286153,9 +286153,9 @@ jsJ
 trD
 jsJ
 nGt
-jsJ
+sde
 trD
-gUq
+vTY
 nGt
 vRu
 vRu
@@ -287017,7 +287017,7 @@ euP
 euP
 euP
 idK
-jMw
+gUq
 jMw
 idK
 euP
