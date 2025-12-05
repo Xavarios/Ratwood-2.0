@@ -18,22 +18,6 @@
 			V.handle_added_languages(recipient)
 			V.handle_stats(recipient)
 
-// Wildborn Pack: Hunter's Apprentice + Forester + Woodwalker
-// For true children of the forest who are one with nature
-/datum/virtue/pack/wildborn
-	name = "Wildborn (-10 TRI)"
-	desc = "The forest is not just your home - it IS you. Born and raised beneath the canopy, you move through the wilderness as silently as the wind, hunt with practiced ease, and gather the forest's bounty effortlessly. You are a true child of nature."
-	triumph_cost = 10
-	granted_virtues = list(
-		/datum/virtue/utility/hunter,
-		/datum/virtue/utility/forester,
-		/datum/virtue/utility/woodwalker
-	)
-	custom_text = "Grants three virtues for the ultimate wilderness survivor:\n\
-	- Hunter's Apprentice: Crafting, Traps, Butchering, Sewing, Tanning, Tracking skills (SURVIVAL_EXPERT trait)\n\
-	- Forester: Cooking, Athletics, Farming, Fishing, Lumberjacking skills, Trusty Hoe (HOMESTEAD_EXPERT trait)\n\
-	- Woodwalker: Silent forest movement, gather twice from bushes (WOODWALKER + OUTDOORSMAN traits)"
-
 // Bronze Golem Pack: Both Bronze Arms
 // For those who have replaced both arms with mechanical prosthetics
 /datum/virtue/pack/bronzegolem
@@ -65,22 +49,6 @@
 	- Performer: Choose stashed instrument, +4 Music skill, nutcracker.\n\
 	- Second Voice: Ability to perfectly mimic a second voice and switch between them"
 
-// Master Craftsman Pack: Blacksmith + Artificer + Miner
-// For those dedicated to working with metal, stone, and construction
-/datum/virtue/pack/mastercraftsman
-	name = "Master Craftsman (-10 TRI)"
-	desc = "I am a polymath of the forge and workshop. From mining ore to smelting ingots, forging weapons to building structures - I have mastered the entire chain of creation. My hands shape the world itself."
-	triumph_cost = 10
-	granted_virtues = list(
-		/datum/virtue/utility/blacksmith,
-		/datum/virtue/utility/artificer,
-		/datum/virtue/utility/mining
-	)
-	custom_text = "Grants three crafting virtues:\n\
-	- Blacksmith's Apprentice: Weaponsmithing, Armorsmithing, Blacksmithing, Smelting skills (SMITHING_EXPERT)\n\
-	- Artificer's Apprentice: Carpentry, Masonry, Engineering, Ceramics skills + tools stashed\n\
-	- Miner's Apprentice: +3 Mining skill, steel pickaxe & lantern stashed"
-
 // Traveling Scholar Pack: Linguist + Rich and Shrewd + Equestrian
 // For worldly scholars who have traveled extensively and accumulated wealth and knowledge
 /datum/virtue/pack/travelingscholar
@@ -97,27 +65,11 @@
 	- Rich and Shrewd: Appraise spell, see prices, coinpurse stashed (SEEPRICES)\n\
 	- Equestrian: Tame goat mount, +1 Riding, saddle stashed, navigate doors while mounted (EQUESTRIAN)"
 
-// Devoted Healer Pack: Physician + Tailor + Devotee
-// For those who mend both flesh and fabric with equal care, guided by divine faith
-/datum/virtue/pack/devotedhealer
-	name = "Devoted Healer (-8 TRI)"
-	desc = "My calling is to mend what is broken - whether flesh torn by blade or fabric torn by life. Through my devotion to the divine, I channel sacred power to heal. I am equally skilled with needle and thread as I am with poultice and prayer."
-	triumph_cost = 8
-	granted_virtues = list(
-		/datum/virtue/utility/physician,
-		/datum/virtue/utility/tailor,
-		/datum/virtue/combat/devotee
-	)
-	custom_text = "Grants three virtues for the faithful healer:\n\
-	- Physician's Apprentice: Medicine, Alchemy skills, diagnose spell, medicine pouch (MEDICINE_EXPERT + ALCHEMY_EXPERT)\n\
-	- Tailor's Apprentice: Sewing, Tanning, Butchering skills, needle & scissors stashed (SEWING_EXPERT)\n\
-	- Devotee: T0 miracles access, +1 Holy skill, passive devotion gain, patron psycross stashed"
-
 // Scrappy Survivor Pack: Cunning Provisioner + Forester + Feral Appetite
 /datum/virtue/pack/scrappysurvivor
-	name = "Scrappy Survivor (-8 TRI)"
+	name = "Scrappy Survivor (-6 TRI)"
 	desc = "I've lived through hard times - poverty, famine, or exile taught me to make do with what I have. I can fish, farm, forage, and most importantly, I can stomach anything. Spoiled rations? Raw meat? Doesn't matter - I'll eat it and keep going."
-	triumph_cost = 8
+	triumph_cost = 6
 	granted_virtues = list(
 		/datum/virtue/utility/granary,
 		/datum/virtue/utility/forester,
@@ -130,9 +82,9 @@
 
 // High Society Pack: Nobility + Socialite
 /datum/virtue/pack/highsociety
-	name = "High Society (-7 TRI)"
+	name = "High Society (-6 TRI)"
 	desc = "I was born into privilege and raised in the finest circles. Noble blood runs through my veins, I read the emotions of others with ease, and my charm opens every door. Wealth, beauty, and status are my birthright."
-	triumph_cost = 7
+	triumph_cost = 6
 	granted_virtues = list(
 		/datum/virtue/utility/noble,
 		/datum/virtue/utility/socialite
@@ -168,18 +120,3 @@
 	- Ugly: Unseemly appearance, immune to corpse stink (UNSEEMLY + NOSTINK traits)\n\
 	- Tolerant: No stress from certain species, broad acceptance\n\
 	- Deadened: Completely emotionless (NOMOOD trait)"
-
-// Chaos Agent Pack: Arsonist + Dust Runner
-/datum/virtue/pack/chaosagent
-	name = "Chaos Agent (-6 TRI)"
-	desc = "I thrive in destruction and disorder. I run dust for the guild and burn what needs burning. Two firebombs and satchels of product - my tools for spreading chaos across the realm."
-	triumph_cost = 6
-	granted_virtues = list(
-		/datum/virtue/items/arsonist,
-		/datum/virtue/thief/drug_runner
-	)
-	custom_text = "Grants two virtues for the agent of chaos:\n\
-	- Arsonist: Alchemy skill, 2 firebombs stashed (ALCHEMY_EXPERT trait)\n\
-	- Dust Runner: 2 satchels of dust + dagger stashed for guild work"
-
-
