@@ -45,6 +45,66 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/rogueweapon/huntingknife/throwingknife/bauernwehr
 	triumph_cost = 3
 
+/datum/loadout_item/waterskin
+	name = "waterskin"
+	path = /obj/item/reagent_containers/glass/bottle/waterskin
+	triumph_cost = 3
+
+/datum/loadout_item/sack
+	name = "sack"
+	path = /obj/item/storage/roguebag
+	triumph_cost = 3
+
+/datum/loadout_item/pouch
+	name = "pouch"
+	path = /obj/item/storage/belt/rogue/pouch
+	triumph_cost = 3
+
+/datum/loadout_item/broom
+	name = "broom"
+	path = /obj/item/broom
+	triumph_cost = 1
+
+/datum/loadout_item/soap
+	name = "soap"
+	path = /obj/item/soap
+	triumph_cost = 3
+
+/datum/loadout_item/candle
+	name = "candle"
+	path = /obj/item/candle/yellow
+	triumph_cost = 1
+
+/datum/loadout_item/keyring
+	name = "keyring"
+	path = /obj/item/storage/keyring
+	triumph_cost = 3
+
+/datum/loadout_item/flint
+	name = "flint"
+	path = /obj/item/flint
+	triumph_cost = 3
+
+/datum/loadout_item/needle_thorn
+	name = "thorn needle"
+	path = /obj/item/needle/thorn
+	triumph_cost = 1
+
+/datum/loadout_item/wooden_bowl
+	name = "bowl"
+	path = /obj/item/reagent_containers/glass/bowl
+	triumph_cost = 1
+
+/datum/loadout_item/wooden_cup
+	name = "cup"
+	path = /obj/item/reagent_containers/glass/cup/wooden
+	triumph_cost = 1
+
+/datum/loadout_item/bottle
+	name = "bottle"
+	path = /obj/item/reagent_containers/glass/bottle/rogue
+	triumph_cost = 1
+
 //HATS
 /datum/loadout_item/shalal
 	name = "Keffiyeh"
@@ -805,11 +865,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 //─────────────────────────────────────────────────────────────
 
 // TOOLS & OBJECTS
-/datum/loadout_item/tri_rope
-	name = "Rope"
-	path = /obj/item/rope
-	triumph_cost = 2
-
 /datum/loadout_item/tri_hammer
 	name = "Hammer"
 	path = /obj/item/rogueweapon/hammer
@@ -833,11 +888,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_hoe
 	name = "Hoe"
 	path = /obj/item/rogueweapon/hoe
-	triumph_cost = 2
-
-/datum/loadout_item/tri_torch
-	name = "Torch"
-	path = /obj/item/flashlight/flare/torch
 	triumph_cost = 2
 
 // SHIELDS
@@ -963,12 +1013,12 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/tri_shell_bracelet
 	name = "Shell Bracelet"
 	path = /obj/item/clothing/neck/roguetown/psicross/shell/bracelet
-	triumph_cost = 2
+	triumph_cost = 4
 
 /datum/loadout_item/tri_shell_necklace
-	name = "Shell Necklace"
+	name = "oyster shell necklace"
 	path = /obj/item/clothing/neck/roguetown/psicross/shell
-	triumph_cost = 2
+	triumph_cost = 4
 
 // CLOTHING - ARMOR
 /datum/loadout_item/tri_regen_skin
@@ -989,20 +1039,9 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/rogueweapon/stoneaxe/handaxe/copper
 	triumph_cost = 4
 
-// SWORDS
-/datum/loadout_item/tri_messer_copper
-	name = "Copper Messer"
-	path = /obj/item/rogueweapon/sword/short/messer/copper
-	triumph_cost = 4
-
-/datum/loadout_item/tri_huntingknife_copper
-	name = "Copper Hunting Knife"
-	path = /obj/item/rogueweapon/huntingknife/copper
-	triumph_cost = 4
-
-/datum/loadout_item/tri_copper_spear
-	name = "Copper Spear"
-	path = /obj/item/rogueweapon/spear/stone/copper
+/datum/loadout_item/tri_messer_rhomphaia_copper
+	name = "Copper Rhomphaia"
+	path = /obj/item/rogueweapon/sword/long/rhomphaia/copper
 	triumph_cost = 4
 
 /datum/loadout_item/tri_whip
@@ -1010,27 +1049,8 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/rogueweapon/whip
 	triumph_cost = 4
 
-//─────────────────────────────────────────────────────────────
-// 6 TRIUMPH - Simple Iron Tier Weapons & Armor
-//─────────────────────────────────────────────────────────────
-
-/datum/loadout_item/tri_axe_iron
-	name = "Iron Axe"
-	path = /obj/item/rogueweapon/stoneaxe/woodcut
-	triumph_cost = 6
-
-/datum/loadout_item/tri_sword_short_iron
-	name = "Iron Shortsword"
-	path = /obj/item/rogueweapon/sword/short/iron
-	triumph_cost = 6
-
-/datum/loadout_item/tri_sword_iron
-	name = "Iron Arming Sword"
-	path = /obj/item/rogueweapon/sword/iron
-	triumph_cost = 6
-
 /datum/loadout_item/tri_messer_iron
-	name = "Iron Messer"
+	name = "Iron Hunting Sword"
 	path = /obj/item/rogueweapon/sword/short/messer/iron
 	triumph_cost = 6
 
@@ -1039,30 +1059,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/rogueweapon/huntingknife
 	triumph_cost = 6
 
-/datum/loadout_item/tri_iron_dagger
-	name = "Iron Dagger"
-	path = /obj/item/rogueweapon/huntingknife/idagger
-	triumph_cost = 6
-
-/datum/loadout_item/tri_spear_iron
-	name = "Iron Spear"
-	path = /obj/item/rogueweapon/spear
-	triumph_cost = 6
-
-/datum/loadout_item/tri_chainmail_iron
-	name = "Iron Haubergeon"
-	path = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-	triumph_cost = 6
-
-/datum/loadout_item/tri_chaingloves
-	name = "Iron Chain Gauntlets"
-	path = /obj/item/clothing/gloves/roguetown/chain/iron
-	triumph_cost = 6
-
-/datum/loadout_item/tri_chaincoif
-	name = "Iron Chain Coif"
-	path = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	triumph_cost = 6
 
 //─────────────────────────────────────────────────────────────
 // 10 TRIUMPH - Lord's Cloak
