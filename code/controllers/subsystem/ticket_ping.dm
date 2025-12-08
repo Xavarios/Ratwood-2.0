@@ -3,7 +3,7 @@ SUBSYSTEM_DEF(ticket_ping)
 	name = "Ticket Ping"
 	flags = SS_BACKGROUND
 	runlevels = RUNLEVEL_LOBBY | RUNLEVEL_SETUP | RUNLEVEL_GAME | RUNLEVEL_POSTGAME
-	wait = 4 MINUTES
+	wait = 5 MINUTES
 
 /datum/controller/subsystem/ticket_ping/Initialize()
 	if(CONFIG_GET(number/ticket_ping_frequency) < 1)
@@ -25,7 +25,7 @@ SUBSYSTEM_DEF(ticket_ping)
 
 	var/is_or_are = (valid_ahelps > 1 ? "are" : "is")
 
-	message_admins(span_adminnotice("There [is_or_are] currently [valid_ahelps ? "[valid_ahelps] unhandled ticket[valid_ahelps == 1 ? "" : "s"] open" : ""]."))
+	message_admins(span_adminnotice("There [is_or_are] currently [valid_ahelps ? "[valid_ahelps] unhandled or neglected ticket[valid_ahelps == 1 ? "" : "s"] open" : ""]."))
 	for(var/client/staff as anything in GLOB.admins)
 		SEND_SOUND(staff, sound('sound/soft_ping.ogg'))
 		window_flash(staff, ignorepref = TRUE)
