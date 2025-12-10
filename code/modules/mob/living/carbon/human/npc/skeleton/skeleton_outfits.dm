@@ -71,7 +71,7 @@
 		if(prob(50))
 			beltr = /obj/item/storage/belt/rogue/pouch/treasure/
 		else
-		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
 	if(prob(5))
 		id = /obj/item/clothing/ring/aalloy
 	var/weapon_choice = rand(1, 4)
@@ -111,7 +111,7 @@
 		if(prob(50))
 			beltr = /obj/item/storage/belt/rogue/pouch/treasure/
 		else
-		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
 	if(prob(5))
 		id = /obj/item/clothing/ring/aalloy
 	var/weapon_choice = rand(1, 4)
@@ -158,7 +158,7 @@
 		if(prob(50))
 			beltr = /obj/item/storage/belt/rogue/pouch/treasure/
 		else
-		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
 	if(prob(5))
 		id = /obj/item/clothing/ring/aalloy
 	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
@@ -194,7 +194,7 @@
 		if(prob(50))
 			beltr = /obj/item/storage/belt/rogue/pouch/treasure/
 		else
-		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
 	if(prob(5))
 		id = /obj/item/clothing/ring/aalloy
 	if(prob(33)) // 33% chance of shield, so ranged don't get screwed over entirely
@@ -259,7 +259,7 @@
 		if(prob(50))
 			beltr = /obj/item/storage/belt/rogue/pouch/treasure/
 		else
-		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
 	if(prob(5))
 		id = /obj/item/clothing/ring/aalloy
 	H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
@@ -316,7 +316,7 @@
 		if(prob(50))
 			beltr = /obj/item/storage/belt/rogue/pouch/treasure/
 		else
-		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
 	if(prob(5))
 		id = /obj/item/clothing/ring/aalloy
 	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
@@ -359,7 +359,7 @@
 		if(prob(50))
 			beltr = /obj/item/storage/belt/rogue/pouch/treasure/
 		else
-		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
+			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor/
 	if(prob(5))
 		id = /obj/item/clothing/ring/aalloy
 	var/weapon_choice = rand(1, 4)
