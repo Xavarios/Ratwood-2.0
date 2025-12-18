@@ -1,12 +1,12 @@
-/datum/advclass/mercenary/anthrax
-	name = "Crocs de \"l'araignée\" Cavalier"
-	tutorial = "The Crocs de \"l'araignée\", translated literally to mean \"'Spider's Teeth'\", is a renowned collective of blades, whips, and riders for hire often employed in the vast drow undercity complexes and occasionally the surface above. Infamous for their battlefrenzy, sadism, and mastery over arachnid cavalry, a member of the Spider's Teeth stands among some of the fiercest if cruelest warriors in Psydonia. Dark elves ultimately are only truly aligned to themselves and their own interests; this trait makes them surprisingly pragmatic and straightforward mercenaries, as a drow can be counted on to do any job so long as the price is right and it serves whatever higher ambition they might have."
+/datum/advclass/mercenary/crocs // formerly Anthrax.dm
+	name = "Crocs de l'araignée Cavalier"
+	tutorial = "The Crocs de l'araignée, translated literally to mean \"Spider's Teeth\", is a renowned collective of blades, whips, and riders for hire often employed in the vast drow undercity complexes and occasionally the surface above. Infamous for their battlefrenzy, sadism, and mastery over arachnid cavalry, a member of the Spider's Teeth stands among some of the fiercest if cruelest warriors in Psydonia. Dark elves ultimately are only truly aligned to themselves and their own interests; this trait makes them surprisingly pragmatic and straightforward mercenaries, as a drow can be counted on to do any job so long as the price is right and it serves whatever higher ambition they might have."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		/datum/species/elf/dark,
 		/datum/species/human/halfelf, // Because half-drows are half-elves, guh.
 	)
-	outfit = /datum/outfit/job/roguetown/mercenary/anthrax
+	outfit = /datum/outfit/job/roguetown/mercenary/crocs
 	class_select_category = CLASS_CAT_RACIAL
 	category_tags = list(CTAG_MERCENARY)
 
@@ -43,7 +43,7 @@
 	)
 	extra_context = "This subclass is race-limited to: Dark Elves Only."
 
-/datum/outfit/job/roguetown/mercenary/anthrax/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/crocs/pre_equip(mob/living/carbon/human/H)
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	belt = /obj/item/storage/belt/rogue/leather/black
@@ -76,9 +76,9 @@
 
 	H.merctype = 15
 
-/datum/advclass/mercenary/anthrax/assassin // doesn't seem to have been enabled before the mercs removal altogether after the rebase, we'll keep it as such accordingly.
+/datum/advclass/mercenary/crocs/assassin // doesn't seem to have been enabled before the mercs removal altogether after the rebase, we'll keep it as such accordingly.
 	name = "Crocs de \"l'araignée\"Assassin"
-	outfit = /datum/outfit/job/roguetown/mercenary/anthrax/assassin
+	outfit = /datum/outfit/job/roguetown/mercenary/crocs/assassin
 	traits_applied = list(TRAIT_DARKVISION, TRAIT_DODGEEXPERT)
 	subclass_stats = list(
 		STATKEY_WIL = 2,
@@ -112,7 +112,7 @@
 		/datum/skill/craft/traps = SKILL_LEVEL_EXPERT,
 	)
 
-/datum/outfit/job/roguetown/mercenary/anthrax/assassin/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/crocs/assassin/pre_equip(mob/living/carbon/human/H)
 	..()
 	shirt = /obj/item/clothing/suit/roguetown/shirt/shadowshirt/elflock
 	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/shadowrobe
