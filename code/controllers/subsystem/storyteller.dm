@@ -1192,7 +1192,8 @@ SUBSYSTEM_DEF(gamemode)
         STATS_ALIVE_TABAXI,
         STATS_ALIVE_VULPS,
         STATS_ALIVE_LUPIANS,
-        STATS_ALIVE_MOTHS
+        STATS_ALIVE_MOTHS,
+		STATS_ALIVE_HARPIES,
 	)
 
 	for(var/stat_name in statistics_to_clear)
