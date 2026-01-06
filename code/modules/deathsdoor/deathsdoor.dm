@@ -187,6 +187,7 @@ GLOBAL_VAR(deaths_door_exit)//turf at necra's shrine on each map
 
 GLOBAL_VAR_INIT(underworld_strands, 0)
 /obj/effect/landmark/underworldstrands
+	var/spawn_timer
 
 /obj/effect/landmark/underworldstrands/Initialize()
 	. = ..()
@@ -209,7 +210,9 @@ GLOBAL_VAR_INIT(underworld_strands, 0)
 	)
 /obj/effect/landmark/underworldstrands/proc/try_spawn()
 	spawn_timer = null
-
+	if(GLOB.underworld_strands >= 4)
+		start_timer()
+		return
 	var/turf/T = get_turf(src)
 	if(!T)
 		start_timer()
