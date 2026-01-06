@@ -27,7 +27,6 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	"Hunted (+1 TRI)"=/datum/charflaw/hunted,
 	"Ugly"=/datum/charflaw/ugly,
 	"Nudist"=/datum/charflaw/nudist,
-	"Inhumen Anatomy"=/datum/charflaw/inhumen_anatomy,
 	"Missing Nose"=/datum/charflaw/missing_nose,
 	"Disfigured"=/datum/charflaw/disfigured,
 	"Pacifism"=/datum/charflaw/pacifism,

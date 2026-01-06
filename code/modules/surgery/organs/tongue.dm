@@ -36,6 +36,9 @@
 	languages_possible = languages_possible_base
 
 /obj/item/organ/tongue/proc/handle_speech(datum/source, list/speech_args)
+	var/mob/living/carbon/speaker = source
+	if(HAS_TRAIT(speaker, TRAIT_COMICSANS))
+		speech_args[SPEECH_SPANS] |= SPAN_SANS
 
 /obj/item/organ/tongue/Insert(mob/living/carbon/M, special = FALSE, drop_if_replaced = TRUE)
 	. = ..()
