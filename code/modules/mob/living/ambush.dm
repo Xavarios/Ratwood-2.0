@@ -158,6 +158,10 @@ GLOBAL_VAR_INIT(ambush_mobconsider_cooldown, 2 MINUTES) // Cooldown for each ind
 			campfires++
 	if(campfires > 0)
 		return TRUE
+	// Check for nearby wilderness guides providing protection from ambushes
+	for(var/mob/living/carbon/human/H in view(10, src))
+		if(HAS_TRAIT(H, TRAIT_WILDERNESSGUIDE))
+			return TRUE
 
 /mob/living/proc/get_possible_ambush_spawn(min_dist = 2, max_dist = 7)
 	var/list/possible_targets = list()
